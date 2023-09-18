@@ -65,6 +65,10 @@ html {
     background-color: rgba(255, 166, 0, 0.404);
 }
 
+.active {
+    background-color: rgba(255, 166, 0, 0.404);
+}
+
 .menu-item {
     display: flex;
     max-height: 200px;

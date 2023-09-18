@@ -129,8 +129,19 @@ filterBtns.forEach(function (btns) {
     } else {
       displayMenuItems(menuCategory);
     }
+
+    btnsCategoryClick(e);
   });
 });
+
+//kategori neyse o buton yansın
+function btnsCategoryClick(btnClick) {
+  filterBtns.forEach(function (btn) {
+    btn.classList.remove("active");
+  });
+  //kategoriye göre buton active kalsın
+  btnClick.currentTarget.classList.add("active");
+}
 
 //load all item for DOMContentLoaded
 function displayMenuItems(menuItems) {
